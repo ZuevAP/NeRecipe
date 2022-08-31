@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">NeRecipe</string>
+    <string name="greeting">NeRecipe!</string>
+    <string name="avatar_description">Author avatar</string>
+    <string name="description_recipe_menu">Recipe menu</string>
+    <string name="description_favorite">Favorite</string>
+    <string name="select_recipe_category">Select</string>
+    <string name="description_recipe_author">Enter Author</string>
+    <string name="description_recipe_name">Enter Name of Recipe</string>
+    <string name="description_recipe_save">Save</string>
+    <string name="menu_remove">Remove</string>
+    <string name="recipe_text">Recipe Text</string>
+    <string name="menu_edit">Edit</string>
+    <string name="menu_add">Add</string>
+    <string name="menu_all_list">All recipes</string>
+    <string name="menu_favorites">Favorite</string>
+    <string name="menu_name">Menu</string>
+    <string name="description_pos_stage">Stage No.</string>
+    <string name="description_name_stage">Enter name of stage recipe</string>
+    <string name="description_stage">Enter detailed description of stage recipe</string>
+    <string name="error_empty_content">No one field can\'t be empty</string>
+    <string name="error_parent_object">No parent object have been created</string>
+    <string name="reminder_stage_edit">Select Stage to edit below and use menu</string>
+    <string name="error_ref_entry">Content must be a HTTP Reference</string>
+    <string name="error_search_filter">Search and filter does not work in this screen</string>
+    <string name="recipe_editMessage">Edit Message</string>
+    <string name="chooser_share_recipe">Share recipe</string>
+    <string name="add_recipe">Add recipe</string>
+    <string name="save">Save</string>
+    <string name="no_recipes">No any recipes created</string>
+    <string name="no_stages">No any stages created</string>
+
+    <string-array name="cat_names">
+        <item>All</item>
+        <item>Eurasian</item>
+        <item>Asian</item>
+        <item>Panasian</item>
+        <item>Eastern</item>
+        <item>American</item>
+        <item>Russian</item>
+        <item>Mediterranean</item>
+    </string-array>
+
+</resources>

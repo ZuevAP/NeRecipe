@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.NewStageFragment">
+
+    <TextView
+        android:id="@+id/subPos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|start"
+        android:layout_margin="@dimen/common_spacing"
+        android:ellipsize="end"
+        android:gravity="bottom"
+        android:paddingBottom="@dimen/convergence_spacing"
+        android:singleLine="true"
+        android:text="@string/description_pos_stage"
+        android:textColor="@color/pink_700"
+        android:textSize="@dimen/common_font_size"
+        android:textStyle="bold"
+        app:layout_anchor="@id/stageNameEdit"></TextView>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/stageNameEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|start"
+        android:layout_margin="@dimen/common_spacing"
+        android:ellipsize="end"
+        android:gravity="start|bottom"
+        android:hint="@string/description_name_stage"
+        android:inputType="text"
+        android:singleLine="true"
+        android:textSize="@dimen/common_font_size"
+        app:layout_anchor="@id/stageEdit"></com.google.android.material.textfield.TextInputEditText>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/stageEdit"
+        android:layout_width="match_parent"
+        android:layout_height="379dp"
+        android:background="@color/Orange_200"
+        android:gravity="start|top"
+        android:hint="@string/description_stage"
+        android:inputType="textMultiLine"
+        android:padding="@dimen/common_spacing"
+        app:layout_anchor="@id/bottomAppBar"></com.google.android.material.textfield.TextInputEditText>
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        style="@style/Widget.MaterialComponents.BottomAppBar.Colored"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/description_recipe_save"
+        app:srcCompat="@drawable/ic_ok_24dp"
+        app:layout_anchor="@id/bottomAppBar"
+        />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

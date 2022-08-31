@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/msvRecipe"
+    tools:context=".activity.RecipeCardFragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/mainRecipe"
+        android:layout_width="411dp"
+        android:layout_height="186dp"
+        android:layout_margin="4dp"
+        app:cardBackgroundColor="@color/Orange_200"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+
+            android:layout_width="397dp"
+            android:layout_height="178dp"
+            android:layout_margin="@dimen/common_spacing"
+            android:background="@color/Orange_200"
+            android:padding="@dimen/common_spacing">
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/menu"
+                style="@style/Widget.AppTheme.IconButton"
+                android:layout_width="34dp"
+                android:layout_height="42dp"
+                android:layout_marginEnd="20dp"
+                android:background="@android:color/transparent"
+                app:icon="@drawable/ic_options_24dp"
+                app:iconSize="32dp"
+                app:iconTint="@color/cardview_dark_background"
+                app:layout_constraintBottom_toBottomOf="@id/category"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/category"
+                app:layout_constraintVertical_bias="0.0"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/recipeView"
+                android:layout_width="160dp"
+                android:layout_height="115dp"
+                android:layout_marginEnd="44dp"
+                android:layout_marginBottom="4dp"
+                android:src="@drawable/asian"
+                app:civ_border_color="@color/pink_700"
+                app:civ_border_width="2dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/category"
+                android:layout_width="238dp"
+                android:layout_height="28dp"
+                android:layout_marginTop="4dp"
+                android:singleLine="false"
+                android:textColor="@color/pink_700"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@id/menu"
+                app:layout_constraintHorizontal_bias="0.183"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Европейская кухня" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="156dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginBottom="52dp"
+                android:singleLine="false"
+                android:textColor="@color/pink_700"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_chainStyle="packed"
+                tools:text="Сырники от тети Глаши" />
+
+            <TextView
+                android:id="@+id/author"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="4dp"
+                android:singleLine="false"
+                android:textColor="@color/pink_700"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/recipeView"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:text="Тетя Глаша" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/favorite"
+                style="@style/Widget.AppTheme.LikeButton"
+                android:layout_width="48dp"
+                android:layout_height="39dp"
+                android:layout_marginEnd="4dp"
+                android:checkable="true"
+                app:icon="@drawable/ic_favorite_24dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:checkable="true"
+                tools:text="like" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/stageContent"
+        android:layout_width="398dp"
+        android:layout_height="485dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="30dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:ignore="MissingConstraints"
+        tools:listitem="@layout/stage_item"
+        tools:visibility="visible">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/empty_view_stage"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:layout_marginBottom="30dp"
+        android:layout_gravity="bottom|center"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:background="@color/cardview_shadow_start_color"
+        android:visibility="gone"
+        android:text="@string/no_stages"
+        tools:text="@string/no_stages">
+    </TextView>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        tools:ignore="MissingConstraints" />
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/HomeworkAndroid/NeRecipe/app/src/main/res/layout/card_recipe.xml" value="0.36666666666666664" />
+        <entry key="..\:/HomeworkAndroid/OBRAZEC/app/src/main/res/drawable/circle.xml" value="0.2205" />
+        <entry key="..\:/HomeworkAndroid/OBRAZEC/app/src/main/res/drawable/ic_add_24dp.xml" value="0.1515" />
+        <entry key="..\:/HomeworkAndroid/OBRAZEC/app/src/main/res/drawable/ic_baseline_filter_alt_24.xml" value="0.3675" />
+        <entry key="..\:/HomeworkAndroid/OBRAZEC/app/src/main/res/drawable/ic_baseline_restaurant_menu_24.xml" value="0.3525" />
+        <entry key="..\:/HomeworkAndroid/OBRAZEC/app/src/main/res/drawable/ic_cancel_36dp.xml" value="0.1515" />
+        <entry key="..\:/HomeworkAndroid/OBRAZEC/app/src/main/res/drawable/ic_favorite_24dp.xml" value="0.1515" />
+        <entry key="..\:/HomeworkAndroid/OBRAZEC/app/src/main/res/drawable/ic_favorite_24dp_red.xml" value="0.1515" />
+        <entry key="..\:/HomeworkAndroid/OBRAZEC/app/src/main/res/drawable/ic_favorite_48dp.xml" value="0.1515" />
+        <entry key="..\:/HomeworkAndroid/OBRAZEC/app/src/main/res/drawable/ic_filter_list_24dp.xml" value="0.1515" />
+        <entry key="..\:/HomeworkAndroid/OBRAZEC/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.1515" />
+        <entry key="..\:/HomeworkAndroid/OBRAZEC/app/src/main/res/drawable/ic_like_24dp.xml" value="0.1515" />
+        <entry key="..\:/HomeworkAndroid/OBRAZEC/app/src/main/res/drawable/ic_netology_48dp.xml" value="0.1515" />
+        <entry key="..\:/HomeworkAndroid/OBRAZEC/app/src/main/res/drawable/ic_ok_24dp.xml" value="0.1515" />
+        <entry key="..\:/HomeworkAndroid/OBRAZEC/app/src/main/res/drawable/ic_options_24dp.xml" value="0.1515" />
+        <entry key="..\:/HomeworkAndroid/OBRAZEC/app/src/main/res/drawable/ic_person_24dp.xml" value="0.1515" />
+        <entry key="..\:/HomeworkAndroid/OBRAZEC/app/src/main/res/drawable/ic_save_48dp.xml" value="0.1515" />
+        <entry key="..\:/HomeworkAndroid/OBRAZEC/app/src/main/res/drawable/ic_search_24dp.xml" value="0.1515" />
+        <entry key="..\:/HomeworkAndroid/OBRAZEC/app/src/main/res/drawable/ic_star_28dp.xml" value="0.1515" />
+        <entry key="..\:/HomeworkAndroid/OBRAZEC/app/src/main/res/drawable/ic_star_48dp.xml" value="0.1515" />
+        <entry key="..\:/HomeworkAndroid/OBRAZEC/app/src/main/res/drawable/ic_star_48dp_red.xml" value="0.1515" />
+        <entry key="..\:/HomeworkAndroid/OBRAZEC/app/src/main/res/drawable/ic_view_list_24dp.xml" value="0.1515" />
+        <entry key="..\:/HomeworkAndroid/OBRAZEC/app/src/main/res/drawable/my_btn_toggle.xml" value="0.232" />
+        <entry key="..\:/HomeworkAndroid/OBRAZEC/app/src/main/res/layout/activity_app.xml" value="0.2536231884057971" />
+        <entry key="..\:/HomeworkAndroid/OBRAZEC/app/src/main/res/layout/card_recipe.xml" value="0.5" />
+        <entry key="..\:/HomeworkAndroid/OBRAZEC/app/src/main/res/layout/category_item.xml" value="0.2536231884057971" />
+        <entry key="..\:/HomeworkAndroid/OBRAZEC/app/src/main/res/layout/fragment_blank.xml" value="0.36666666666666664" />
+        <entry key="..\:/HomeworkAndroid/OBRAZEC/app/src/main/res/layout/fragment_feed.xml" value="0.2536231884057971" />
+        <entry key="..\:/HomeworkAndroid/OBRAZEC/app/src/main/res/layout/fragment_new_recipe.xml" value="0.4388888888888889" />
+        <entry key="..\:/HomeworkAndroid/OBRAZEC/app/src/main/res/layout/fragment_new_stage.xml" value="0.2536231884057971" />
+        <entry key="..\:/HomeworkAndroid/OBRAZEC/app/src/main/res/layout/probe.xml" value="0.35" />
+        <entry key="..\:/HomeworkAndroid/OBRAZEC/app/src/main/res/layout/stage_item.xml" value="0.2536231884057971" />
+        <entry key="..\:/HomeworkAndroid/OBRAZEC/app/src/main/res/menu/options_bar.xml" value="0.36666666666666664" />
+        <entry key="..\:/HomeworkAndroid/OBRAZEC/app/src/main/res/menu/options_menu.xml" value="0.36666666666666664" />
+        <entry key="..\:/HomeworkAndroid/OBRAZEC/app/src/main/res/menu/options_recipe.xml" value="0.36666666666666664" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

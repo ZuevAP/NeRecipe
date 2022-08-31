@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Книга рецептов!</string>
+    <string name="greeting">Книга рецептов!</string>
+    <string name="avatar_description">Аватар автора</string>
+    <string name="description_recipe_menu">Меню рецепта</string>
+    <string name="description_favorite">Нравится</string>
+    <string name="select_recipe_category">Выберите кухню</string>
+    <string name="description_recipe_author">Введите автора</string>
+    <string name="description_recipe_name">Введите название рецепта</string>
+    <string name="description_recipe_save">Сохранить</string>
+    <string name="menu_remove">Удалить</string>
+    <string name="menu_edit">Изменить</string>
+    <string name="menu_add">Добавить</string>
+    <string name="menu_all_list">Все рецепты</string>
+    <string name="menu_favorites">Избранные</string>
+    <string name="menu_name">Меню</string>
+    <string name="description_pos_stage">Этап No.</string>
+    <string name="description_name_stage">Введите название этапа рецепта</string>
+    <string name="description_stage">Введите подробное описание этапа рецепта</string>
+
+    <string name="recipe_text">Текст рецепта</string>
+    <string name="error_empty_content">Ни одно из полей не может быть пустым</string>
+    <string name="error_parent_object">Не было создано ни одного родительского объекта</string>
+    <string name="reminder_stage_edit">Выберите этап для редактирования и используйте меню</string>
+    <string name="error_ref_entry">Контент должен содержать ссылку HTTP ресурса</string>
+    <string name="error_search_filter">Поиск и выбор категории не работают на этом экране</string>
+    <string name="recipe_editMessage">Редактирование сообщения</string>
+    <string name="chooser_share_recipe">Поделиться</string>
+    <string name="add_recipe">Добавить рецепт</string>
+    <string name="save">Сохранить</string>
+    <string name="no_recipes">Нет данных о рецептах</string>
+    <string name="no_stages">Нет данных об этапах приготовления</string>
+
+    <string-array name="cat_names">
+        <item>Все категории</item>
+        <item>Европейская кухня</item>
+        <item>Азиатская кухня</item>
+        <item>Паназиатская кухня </item>
+        <item>Восточная кухня</item>
+        <item>Американская кухня</item>
+        <item>Русская кухня</item>
+        <item>Средиземноморская кухня</item>
+    </string-array>
+</resources>

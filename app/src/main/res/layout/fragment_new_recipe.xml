@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.NewRecipeFragment">
+
+    <TextView
+        android:id="@+id/catEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|start"
+        android:layout_margin="@dimen/common_spacing"
+        android:ellipsize="end"
+        android:gravity="center|bottom"
+        android:paddingBottom="@dimen/convergence_spacing"
+        android:singleLine="true"
+        android:text="@string/select_recipe_category"
+        android:textColor="@color/pink_700"
+        android:textIsSelectable="true"
+        android:textSize="@dimen/common_font_size"
+        android:textStyle="bold"
+        app:layout_anchor="@id/catEditList"
+        tools:text="Recipe Category"></TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/catEditList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|top"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/convergence_spacing"
+        android:paddingBottom="@dimen/convergence_spacing"
+        android:choiceMode="singleChoice"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_anchor="@+id/authorEdit"
+        app:srcCompat="@layout/category_item"
+        tools:layout_editor_absoluteX="0dp"
+        tools:listitem="@layout/category_item">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/authorEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|start"
+        android:layout_margin="@dimen/common_spacing"
+        android:ellipsize="end"
+        android:gravity="start|bottom"
+        android:hint="@string/description_recipe_author"
+        android:inputType="text"
+        android:singleLine="true"
+        android:textSize="@dimen/common_font_size"
+        app:layout_anchor="@id/nameEdit"
+        tools:text="@string/description_recipe_author">
+
+    </com.google.android.material.textfield.TextInputEditText>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/nameEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|start"
+        android:layout_margin="@dimen/common_spacing"
+        android:ellipsize="end"
+        android:gravity="start|bottom"
+        android:inputType="text"
+        android:singleLine="true"
+        android:textSize="@dimen/common_font_size"
+        android:hint="@string/description_recipe_name"
+        app:layout_anchor="@+id/edit"
+        tools:text="@string/description_recipe_name">
+    </com.google.android.material.textfield.TextInputEditText>
+
+
+    <TextView
+        android:id="@+id/edit"
+        android:layout_width="309dp"
+        android:layout_height="91dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="50dp"
+        android:gravity="start|top"
+        android:padding="@dimen/common_spacing"
+        app:layout_anchor="@id/stageEditList"
+        tools:text="Recipe Content Multiline"></TextView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/menu"
+        style="@style/Widget.AppTheme.IconButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:layout_gravity="top"
+        app:layout_anchorGravity="right"
+        app:icon="@drawable/ic_options_24dp"
+        app:iconSize="32dp"
+        app:iconGravity="textStart"
+        android:text="@string/menu_name"
+        app:iconTint="@color/cardview_dark_background"
+        app:layout_anchor="@id/stageEditList" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/stageEditList"
+        android:layout_width="match_parent"
+        android:layout_height="198dp"
+        android:layout_gravity="start|end"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_anchor="@id/footerAppBar"
+        tools:listitem="@layout/stage_item"></androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_gravity="start|end"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:background="@color/Orange_200"
+        android:visibility="gone"
+        app:layout_anchor="@id/footerAppBar"
+        android:text="@string/no_stages">
+    </TextView>
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/footerAppBar"
+        style="@style/Widget.MaterialComponents.BottomAppBar.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/description_recipe_save"
+        app:layout_anchor="@id/footerAppBar"
+        app:srcCompat="@drawable/ic_ok_24dp" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
