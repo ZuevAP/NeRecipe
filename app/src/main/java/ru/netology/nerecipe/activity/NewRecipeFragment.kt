@@ -62,12 +62,17 @@ class NewRecipeFragment : Fragment() {
         val idRecipe = arguments?.idSubArg?.toLong() ?: 0
 
 
-        val categoryAdapter = CategoryAdapter(object : OnInteractionCatListener {
+        val categoryAdapter = CategoryNewRecipeAdapter(object : OnInteractionCatListener {
+
             override fun onClicked(category: Category) {
-                binding.catEdit.text = category.titleRu.trim()
+
+               binding.catEdit.text = category.titleRu.trim()
+
             }
         })
         binding.catEditList.adapter = categoryAdapter
+
+
 
 
         val stagesAdapter = StagesAdapter(object : OnInteractionStageListener {

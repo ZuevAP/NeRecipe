@@ -20,10 +20,7 @@ import ru.netology.nerecipe.activity.NewRecipeFragment.Companion.idSubArg
 import ru.netology.nerecipe.activity.NewRecipeFragment.Companion.nameArg
 import ru.netology.nerecipe.activity.NewRecipeFragment.Companion.textArg
 import ru.netology.nerecipe.activity.RecipeCardFragment.Companion.idArg
-import ru.netology.nerecipe.adapter.CategoryAdapter
-import ru.netology.nerecipe.adapter.OnInteractionCatListener
-import ru.netology.nerecipe.adapter.OnInteractionListener
-import ru.netology.nerecipe.adapter.RecipesAdapter
+import ru.netology.nerecipe.adapter.*
 import ru.netology.nerecipe.databinding.FragmentFeedBinding
 import ru.netology.nerecipe.dto.Category
 import ru.netology.nerecipe.dto.Recipe
@@ -47,7 +44,7 @@ class FeedFragment : Fragment() {
             false
         )
 
-        val categoryAdapter = CategoryAdapter(object : OnInteractionCatListener {
+        val categoryAdapter = FeedFragmentCategoryAdapter(object : OnInteractionCatListener {
             override fun onClicked(category: Category) {
                 if (category.selected && category.titleRu != "Все категории")
                     viewModel.getByFilterOnCat(category.titleRu.trim())

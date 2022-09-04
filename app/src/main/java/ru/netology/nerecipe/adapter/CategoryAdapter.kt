@@ -11,7 +11,7 @@ interface OnInteractionCatListener {
     fun onClicked(category: Category)
 }
 
-class CategoryAdapter(
+class FeedFragmentCategoryAdapter(
     private val onInteractionCatListener: OnInteractionCatListener,
 ) : RecyclerView.Adapter<CategoryViewHolder>() {
 
@@ -24,6 +24,33 @@ class CategoryAdapter(
         Category(5, "American", "Американская кухня"),
         Category(6, "Russian", "Русская кухня"),
         Category(7, "Mediterranean", "Средиземноморская кухня")
+    )
+
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CategoryViewHolder {
+        val inflater = LayoutInflater.from(parent.context)
+        val binding = CategoryItemBinding.inflate(inflater, parent, false)
+        return CategoryViewHolder(binding, onInteractionCatListener)
+    }
+
+    override fun onBindViewHolder(holder: CategoryViewHolder, position: Int) {
+        val category = listCategory[position]
+        holder.bind(category)
+    }
+
+    override fun getItemCount(): Int = listCategory.size
+}
+class CategoryNewRecipeAdapter(
+    private val onInteractionCatListener: OnInteractionCatListener,
+) : RecyclerView.Adapter<CategoryViewHolder>() {
+
+    val listCategory = listOf(
+        Category(0, "Eurasian", "Европейская кухня"),
+        Category(1, "Asian", "Азиатская кухня"),
+        Category(2, "Panasian", "Паназиатская кухня"),
+        Category(3, "Eastern", "Восточная кухня"),
+        Category(4, "American", "Американская кухня"),
+        Category(5, "Russian", "Русская кухня"),
+        Category(6, "Mediterranean", "Средиземноморская кухня")
     )
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CategoryViewHolder {

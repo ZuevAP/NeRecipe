@@ -9,8 +9,8 @@
 
     <TextView
         android:id="@+id/subPos"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="379dp"
+        android:layout_height="53dp"
         android:layout_gravity="top|start"
         android:layout_margin="@dimen/common_spacing"
         android:ellipsize="end"
@@ -25,8 +25,8 @@
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/stageNameEdit"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="386dp"
+        android:layout_height="92dp"
         android:layout_gravity="top|start"
         android:layout_margin="@dimen/common_spacing"
         android:ellipsize="end"
@@ -40,7 +40,7 @@
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/stageEdit"
         android:layout_width="match_parent"
-        android:layout_height="379dp"
+        android:layout_height="307dp"
         android:background="@color/Orange_200"
         android:gravity="start|top"
         android:hint="@string/description_stage"
